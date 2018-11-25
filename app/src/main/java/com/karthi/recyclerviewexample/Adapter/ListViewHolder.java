@@ -1,4 +1,4 @@
-package com.karthi.recyclerviewexample;
+package com.karthi.recyclerviewexample.Adapter;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -6,13 +6,15 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.karthi.recyclerviewexample.Model.Item;
+import com.karthi.recyclerviewexample.R;
+import com.karthi.recyclerviewexample.Listener.RecyclerViewClickListener;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class ListViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
     @BindView(R.id.tvw_version_name)
-    TextView tvwMusicName;
+    public TextView tvwMusicName;
     Item mItem;
     private RecyclerViewClickListener mListener;
 

@@ -1,4 +1,4 @@
-package com.karthi.recyclerviewexample;
+package com.karthi.recyclerviewexample.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.karthi.recyclerviewexample.Model.Item;
+import com.karthi.recyclerviewexample.R;
+import com.karthi.recyclerviewexample.Listener.RecyclerViewClickListener;
 
 import java.util.List;
 
@@ -60,7 +62,7 @@ public class ListAdpter extends RecyclerView.Adapter<RecyclerView.ViewHolder> im
         notifyDataSetChanged();
         mClickListener.onPositionClicked(position);
     }
-    interface ClickListener{
+    public interface ClickListener{
         void onPositionClicked(int poisition);
     }
 }
